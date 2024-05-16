@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-icon-bs {
+    width: 91px;
+    height: 50px;
+}
+
+
+/* .img-fluid {
+    max-width: 100%;
+    height: auto;
+} */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 87vh;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+a {
+    cursor: pointer;
+}
+
+.testimonial-logo {
+    width: 100px;
+    height: 55px;
+}
+
+.testimonial {
+    background: rgb(255, 0, 223);
+    background: linear-gradient(45deg, rgba(255, 0, 223, 1) 0%, rgba(255, 0, 0, 1) 0%, rgba(119, 0, 209, 1) 50%, rgba(0, 4, 255, 1) 100%);
+}
+
+
+/* .header {
+    background: url("https://supercell.com/images/1a5b69311180a4a1c374e10556941f05/1681/hero_bg_brawlstars.a385872a.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 87vh;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+} */
+
+.content-part {
+    position: relative;
+    z-index: 1;
+}
+
+.news-header {
+    color: #ea02ff;
+}
+
+.stay-up-date {
+    background: url("https://supercell.com/images/21f696d382b894ed8a35f8718be2d872/1281/bg_gamesocial_brawlstars.4762f735.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-media-logo {
+    font-size: 1.5rem;
+}
+
+.footer-usermenu {
+    border-top: solid 0.5px rgb(149, 149, 149);
+}
+
+li {
+    font-size: 0.88rem;
+}
+
+.address span {
+    display: block;
+    align-items: center;
+    color: rgb(149, 149, 149) !important;
+}
