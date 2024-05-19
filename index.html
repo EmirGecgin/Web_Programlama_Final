@@ -22,13 +22,13 @@
             <div class="navbar-collapse collapse" id="navbarNavDropdown" style="">
                 <ul class="navbar-nav ms-auto px-4 fw-semibold">
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" aria-current="page" href="#feature-section">About</a>
+                        <a class="nav-link text-white" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" aria-current="page" href="#feature-section">Features</a>
+                        <a class="nav-link text-white" aria-current="page" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" href="#get-app-section">Download</a>
+                        <a class="nav-link text-white" href="download.html">Download</a>
                     </li>
                     <li class="nav-item px-3">
                         <button type="button" class="btn btn-primary rounded-5 " data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-circle me-2"></i>Login</button>
@@ -37,30 +37,65 @@
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-    <section class="header">
-        <div class="container ">
-            <video class="video-bg" autoplay muted loop src="Assets\Img\Brawl_Stars_No_Time_to_Explain (online-video-cutter.com).mp4"></video>
-            <div class="content-part row d-flex py-5 text-white">
-
-                <div class="col-lg-6 col-md-12 py-lg-5  py-md-4 py-2 px-5 text-md-center text-lg-start text-center">
-                    <h1 class="pt-lg-2 pt-md-4 pt-2 pb-2 display-5">3V3 AND BATTLE ROYALE
-                    </h1>
-                    <p class="lead">Time to BRAWL! Team up with your friends and get ready for epic multiplayer MAYHEM! Brawl Stars is the newest game from the makers of Clash of Clans and Clash Royale. Jump into your favorite game mode and play quick matches with your
-                        friends. Shoot 'em up, blow 'em up, punch 'em out and win the BRAWL.</p>
-                    <div class="col-lg-12 text-md-center text-lg-start text-center ">
-                        <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=tr"><img class="me-2" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/app-store-badge.svg" alt="apple-logo"></a>
-                        <a href="https://apps.apple.com/us/app/brawl-stars/id1229016807"><img style=" width: 135px; height: 40px;" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/google-play-badge.svg " alt="google-play-logo"></a>
-                    </div>
+    <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header py-4">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Send Feedback</h1>
+                    <button type="button" class=" btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-lg-6 d-block">
-                    <div>
-                        <!-- <img class="img-fluid" src="Assets\Img\72fd889e8501fe4b29c949b329113392.png" alt=""> -->
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="Name">
+                        <label for="Name">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="email-id">
+                        <label for="email-id">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="phone-number">
+                        <label for="phone-number">Phone number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="Text-area" style="height: 100px;"></textarea>
+                        <label for="Text-area" class="form-label">Example textarea</label>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary col-12 rounded-5 fs-5 " type="submit">Submit form</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Navbar End -->
+
+    <section class="header">
+        <div class="overlay">
+            <div class="container">
+                <video class="video-bg" autoplay muted loop src="Assets\Img\Brawl_Stars_No_Time_to_Explain (online-video-cutter.com).mp4"></video>
+                <div class="content-part row d-flex py-5 text-white">
+
+                    <div class="col-lg-6 col-md-12 py-lg-5  py-md-4 py-2 px-5 text-md-center text-lg-start text-center">
+                        <h1 class="pt-lg-2 pt-md-4 pt-2 pb-2 display-5">3V3 AND BATTLE ROYALE
+                        </h1>
+                        <p class="lead">Time to BRAWL! Team up with your friends and get ready for epic multiplayer MAYHEM! Brawl Stars is the newest game from the makers of Clash of Clans and Clash Royale. Jump into your favorite game mode and play quick matches with
+                            your friends. Shoot 'em up, blow 'em up, punch 'em out and win the BRAWL.</p>
+                        <div class="col-lg-12 text-md-center text-lg-start text-center ">
+                            <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=tr"><img class="me-2" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/app-store-badge.svg" alt="apple-logo"></a>
+                            <a href="https://apps.apple.com/us/app/brawl-stars/id1229016807"><img style=" width: 135px; height: 40px;" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/google-play-badge.svg " alt="google-play-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-block">
+                        <div>
+                            <!-- <img class="img-fluid" src="Assets\Img\72fd889e8501fe4b29c949b329113392.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     <!-- Quote/testimonial aside-->
     <section class="testimonial">
@@ -92,19 +127,28 @@
                 <h1 class="text-center py-2">NEWS</h1>
                 <div class="row gx-4 d-flex">
                     <div class="col-lg-6 col-12">
-                        <img class="img-fluid py-2 px-2" src="https://brawlstars.inbox.supercell.com/xdjcscmv3zo3/6Hn4jTeS0NQtp7FOaYaT4W/c9bb923ffe61eaf996e61061be9f944f/0422_Godzilla_update_release_notes_800x433.png?w=800&h=433&fit=fill&f=center&fm=webp" alt="">
+                        <a href="https://supercell.com/en/games/brawlstars/blog/release-notes/patch-notes-godzilla-attacks-brawl/"><img class="img-fluid py-2 px-2" src="https://brawlstars.inbox.supercell.com/xdjcscmv3zo3/6Hn4jTeS0NQtp7FOaYaT4W/c9bb923ffe61eaf996e61061be9f944f/0422_Godzilla_update_release_notes_800x433.png?w=800&h=433&fit=fill&f=center&fm=webp"
+                                alt=""></a>
                         <div class="text-center">
                             <h5 class="py-2 news-header">BRAWL STARS</h5>
-                            <p class="pb-2 lead">Patch notes: Godzilla Attacks Brawl!</p>
+                            <a class="news-href" href="https://supercell.com/en/games/brawlstars/blog/release-notes/patch-notes-godzilla-attacks-brawl/">
+                                <p class="pb-2 lead">Patch notes: Godzilla Attacks Brawl!</p>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
-                        <img class="img-fluid py-2 px-2" src="https://brawlstars.inbox.supercell.com/xdjcscmv3zo3/6DODzPuOkC7bYbZuVd89vH/3b1524b14f20905c1dcffb998330233d/0226_Ranked_Patch_notes_800x433.png?w=800&h=433&fit=fill&f=center&fm=webp" alt="">
+                        <a href="https://supercell.com/en/games/brawlstars/blog/release-notes/patch-notes-ranked-update/"><img class="img-fluid py-2 px-2" src="https://brawlstars.inbox.supercell.com/xdjcscmv3zo3/6DODzPuOkC7bYbZuVd89vH/3b1524b14f20905c1dcffb998330233d/0226_Ranked_Patch_notes_800x433.png?w=800&h=433&fit=fill&f=center&fm=webp" alt=""></a>
                         <div class="text-center">
                             <h5 class="py-2 news-header">BRAWL STARS</h5>
-                            <p class="pb-2 lead">Patch notes: Godzilla Attacks Brawl!</p>
+                            <a class="news-href" href="https://supercell.com/en/games/brawlstars/blog/release-notes/patch-notes-ranked-update/">
+                                <p class="pb-2 lead">Patch notes: Ranked Update</p>
+                            </a>
+
                         </div>
                     </div>
+                </div>
+                <div class="d-flex justify-content-center py-5 align-items-center">
+                    <a href="https://supercell.com/en/games/brawlstars/blog/"><button class="btn btn-primary news-btn">BRAWL STARS NEWS</button></a>
                 </div>
             </div>
         </div>
@@ -113,15 +157,15 @@
     <section class="stay-up-date">
         <div class="container">
             <div class="row py-5 ">
-                <div class="col-lg-6 col-md-12 col-12 order-2 order-md-1 py-2 px-2">
+                <div class="col-lg-6 col-md-12 col-12 order-2 order-md-1 py-2 px-3">
                     <img class="img-fluid" src="https://supercell.com/images/1e491ac85a61389db92aeb48e54d704b/bg_gamewebsite_brawlstars.e19bca68.webp" alt="">
                 </div>
-                <div class="col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center order-1 order-md-2  py-2 px-2">
+                <div class="content-stay col-lg-6 col-md-12 col-12 d-flex justify-content-center align-items-center order-1 order-md-2  py-2 px-3">
                     <div>
                         <h2 class="text-white fs-1">STAY UP-TO-DATE</h2>
                         <p class="text-white fs-5">To stay on top of your game, keep an eye on the in-game News section. Follow us on social media for the latest chatter and sneak peeks on what the team is working on. Don’t be a stranger and join the conversation.</p>
                         <h5 class="text-white">FOLLOW BRAWL STARS ON</h5>
-                        <div class="social-media-logo d-flex text-white">
+                        <div class="social-media-logo-content d-flex text-white">
                             <i class="social-media-logo bi bi-twitter-x pe-2"></i>
                             <i class="social-media-logo bi bi-instagram px-2"></i>
                             <i class="social-media-logo bi bi-youtube px-2"></i>
@@ -133,53 +177,101 @@
         </div>
     </section>
 
+    <section class="card-section  ">
+        <div class="container py-2 ">
+
+            <div class="row py-5 ">
+
+                <div class="col-md-4 col-12 justify-content-center d-flex px-2 pb-3">
+                    <a class="card-href" href="https://www.youtube.com/watch?v=vMGdiV-42Fo">
+                        <div class="card " style="width: 100%;">
+
+                            <img class="pause-button" src="https://supercell.com/_next/static/media/playvideo.14f5a53a.webp" alt="pause-button">
+                            <img src="https://supercell.com/images/cee9718e8a21e90d04f384ff3653b221/games_brawlstars_video_mechamayhem_thumbnail.19dfe12f.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 d-flex justify-content-start">
+                                        <p class="card-text">Mache Meyhan</p>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end">
+                                        <img src="https://supercell.com/_next/static/media/bg_logo_youtube.7663896d.webp" style="width: 70px; height: 16px;" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4 col-12 justify-content-center d-flex px-2 pb-3">
+                    <a class="card-href" href="https://www.youtube.com/watch?v=BnmpuiWX3rk">
+                        <div class="card " style="width: 100%;">
+                            <img class="pause-button" src="https://supercell.com/_next/static/media/playvideo.14f5a53a.webp" alt="pause-button">
+                            <img src="https://supercell.com/images/3da7260771d1baf3ee36393ca3b2c666/games_brawlstars_video_retropolis_thumbnail.54f29b8c.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 d-flex justify-content-start">
+                                        <p class="card-text">Welcome to Retropolis!</p>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end">
+                                        <img src="https://supercell.com/_next/static/media/bg_logo_youtube.7663896d.webp" style="width: 70px; height: 16px;" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4 col-12 justify-content-center d-flex px-2 ">
+                    <a class="card-href" href="https://www.youtube.com/watch?v=B38eWbSuSiM">
+                        <div class="card " style="width: 100%;">
+                            <img class="pause-button" src="https://supercell.com/_next/static/media/playvideo.14f5a53a.webp" alt="pause-button">
+                            <img src="https://supercell.com/images/8aeec89d68e543fc0fb29c94fbb6e792/games_brawlstars_video_ricolove_thumbnail.25557357.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 d-flex justify-content-start">
+                                        <p class="card-text">My Sweet Brawlentine</p>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end">
+                                        <img src="https://supercell.com/_next/static/media/bg_logo_youtube.7663896d.webp" style="width: 70px; height: 16px;" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-black text-white">
-        <div class="container">
+        <div class="container px-5">
             <div class="row d-flex py-5">
-                <div class="col-lg-6">
-                    <h5 class="fs-6 ">Follow us on</h5>
-                    <div>
+                <div class="col-lg-6 col-12 justify-content-start">
+                    <h5 class="fs-6">Follow us on</h5>
+                    <div class="pb-2">
                         <i class="social-media-logo bi bi-twitter-x pe-2"></i>
                         <i class="social-media-logo bi bi-instagram px-2"></i>
                         <i class="social-media-logo bi bi-youtube px-2"></i>
-                        <i class="social-media-logo bi bi-tiktok ps-2"></i>
+                        <i class="social-media-logo bi bi-tiktok ps-2 "></i>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-lg-end">
-                    <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=tr"><img class="me-2" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/app-store-badge.svg" alt="apple-logo"></a>
-                    <a href="https://apps.apple.com/us/app/brawl-stars/id1229016807"><img style=" width: 135px; height: 40px;" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/google-play-badge.svg " alt="google-play-logo"></a>
+                <div class="col-lg-6 p d-lg-flex justify-content-lg-end d-block justify-content-start col-12">
+                    <a class="py-2" href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=tr"><img class="me-2" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/app-store-badge.svg" alt="apple-logo"></a>
+                    <a class="py-2" href="https://apps.apple.com/us/app/brawl-stars/id1229016807"><img style=" width: 135px; height: 40px;" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/google-play-badge.svg " alt="google-play-logo"></a>
                 </div>
             </div>
-            <div class="py-3 footer-usermenu">
-                <ul class="d-flex justify-content-center text-center py-3">
-                    <li style="list-style-type: none;" class="px-3 ">
-                        Terms of Service
-                    </li>
-                    <li style="list-style-type: none;" class="px-3">
-                        Privacy Policy
-                    </li>
-                    <li style="list-style-type: none;" class="px-3">
-                        Parent's Guide
-                    </li>
-                    <li style="list-style-type: none;" class="px-3">
-                        Safe and Fair Play Policy
-                    </li>
-                    <li style="list-style-type: none;" class="px-3">
-                        Other Legal Docs
-                    </li>
-                    <li style="list-style-type: none;" class="px-3">
-                        For Media
-                    </li>
-                    <li style="list-style-type: none;" class="px-3">
-                        Our Domains
-                    </li>
-                    <li style="list-style-type: none;" class="px-3">
-                        Manage Cookies
-                    </li>
-                </ul>
+            <div class="py-3 row footer-usermenu d-lg-flex justify-content-lg-center justify-content-start d-block text-center">
+                <div class="col-lg-2 col-12 py-1 "><a class="footer-elements" href="#!">Terms of Service</a></div>
+                <div class="col-lg-2 col-12 py-1 "><a class="footer-elements" href="#!">Privacy Policy</a></div>
+                <div class="col-lg-2 col-12 py-1 "><a class="footer-elements" href="#!">Parent's Guide</a></div>
+                <div class="col-lg-2 col-12 py-1 "><a class="footer-elements" href="#!">Safe and Fair Play Policy</a>
+                </div>
+                <div class="col-lg-2 col-12 py-1 "><a class="footer-elements" href="#!">Other Legal Docs</a></div>
+                <div class="col-lg-2 col-12 py-1 "><a class="footer-elements" href="#!">Manage Cookies</a></div>
             </div>
             <div class="row d-flex py-5">
-                <div class="col-lg-6 ">
+                <div class="col-lg-6 col-12 justify-content-start pb-2">
                     <div class="address">
                         <span>Supercell Oy</span>
                         <span>Jätkäsaarenlaituri 1</span>
@@ -187,12 +279,13 @@
                         <span>Finland</span>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-lg-end align-items-center pb-5">
+                <div class="col-lg-6 d-lg-flex justify-content-lg-end align-items-center pb-5 d-block justify-content-start pt-2">
                     <img class="testimonial-logo" src="Assets/Img/Brawl-Stars-Logo.png" alt="">
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 
 </html>
