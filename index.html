@@ -46,25 +46,28 @@
                     <button type="button" class=" btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="Name">
-                        <label for="Name">Full Name</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" id="email-id">
-                        <label for="email-id">Email address</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" id="phone-number">
-                        <label for="phone-number">Phone number</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" id="Text-area" style="height: 100px;"></textarea>
-                        <label for="Text-area" class="form-label">Example textarea</label>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary col-12 rounded-5 fs-5 " type="submit">Submit form</button>
-                    </div>
+                    <form action="process-signup.php" method="post">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" name="name">
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email">
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="password" name="password">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="password-confirmaton" name="password-confirmaton">
+                            <label for="password-confirmaton">Password Repeat</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary col-12 rounded-5 fs-5 ">Submit form</button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
